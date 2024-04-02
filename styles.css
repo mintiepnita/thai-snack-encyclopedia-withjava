@@ -1,0 +1,686 @@
+html {
+  box-sizing: border-box;
+  background-color: #222222;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/************** End CSS Reset **************/
+
+.language-button {
+  padding-top: 4%;
+  text-align: center;
+  color: white;
+  font-size: calc(0.9vw + 0.9vh) ;
+}  
+
+/************ Fonts ************/
+@font-face {
+  font-family: SourceCodePro;
+  src: url(fonts/SourceCodePro-Regular.ttf) format("truetype");
+} 
+
+/************** Title ************/
+
+h1 {
+  text-align: center;
+  font-family: SourceCodePro;
+  font-size: calc(2vw + 2vh);
+  margin: 3%;
+  font-weight: 500;
+  color: white;
+}
+
+/************** Cards Class ************/
+
+.card {
+  text-align: center;
+  font-size: 100%;
+  vertical-align: top;
+  font-family: SourceCodePro;
+  border: 1px solid black;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  width: 220px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; color:white ; font-family: SourceCodePro; justify-content: center;
+}
+
+.cardpic {
+  width: 165.2px;
+  height: 196.8px;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/************** Emd Cards Class ************/
+
+/************** Cards ID ************/
+#gaiyang_card {
+  transform: rotate(-10.36deg);
+}
+
+#gaiyang_card img:hover {
+  content: url(images/realsnack/kaiyang2_realsnack.png);
+}
+
+#eurocustard_card {
+  transform: rotate(9deg);
+}
+
+#eurocustard_card img:hover {
+  content: url(images/realsnack/eurocustardcake_realsnack.png);
+}
+
+#puthai_card {
+  transform: rotate(-8.96deg);
+}
+
+
+#puthai_card img:hover {
+  content: url(images/realsnack/puthai_realsnack.png);
+}
+
+#jollystick_card {
+  transform: rotate(12deg);
+}
+
+#jollystick_card img:hover {
+  content: url(images/realsnack/jollystick1_realsnack.png);
+}
+
+#luckycoco_card {
+  transform: rotate(-11.3deg);
+}
+
+#luckycoco_card img {
+  margin-bottom: 10%;
+}
+
+#luckycoco_card img:hover {
+  content: url(images/realsnack/coco_realsnack.png);
+}
+
+#banana_card {
+  transform: rotate(7.21deg);
+}
+
+#banana_card img {
+ margin-bottom: 10%;
+}
+
+#banana_card img:hover {
+  content: url(images/realsnack/banana_realsnack.png);
+}
+
+#tenjang_card {
+  transform: rotate(15deg);
+}
+
+#tenjang_card img {
+  margin-bottom: 10%;
+}
+
+#tenjang_card img:hover {
+  content: url(images/realsnack/tenjang_realsnack.png);
+}
+
+#ringpop_card {
+  transform: rotate(-10deg);
+}
+
+#ringpop_card img {
+  margin-bottom: 10%;
+}
+
+#ringpop_card img:hover {
+  content: url(images/realsnack/ringpop_realsnack.png);
+}
+
+#yimyim_card {
+  transform: rotate(15deg);
+}
+
+#yimyim_card img {
+  margin-bottom: 10%;
+}
+
+#yimyim_card img:hover {
+  content: url(images/realsnack/yimyim_realsnack.png);
+}
+
+#kidkid_card {
+  transform: rotate(-10deg);
+}
+
+#kidkid_card img {
+ margin-bottom: 10%;
+}
+
+#kidkid_card img:hover{
+  content: url(images/realsnack/kidkid1_realsnack.png);
+}
+
+#sanghai_card {
+  transform: rotate(10deg);
+}
+
+#sanghai_card img{
+  margin-bottom: 10%;
+}
+
+#sanghai_card img:hover{
+  content: url(images/realsnack/sanghai_realsnack.png);
+}
+
+#ff_card {
+  transform: rotate(-20deg);
+}
+
+#ff_card img:hover{
+  content: url(images/realsnack/ff2_realsnack.png);
+}
+
+/************** End Cards ID ************/
+
+/************** Card Info ************/
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 100%;
+  font-family: SourceCodePro;
+}
+
+.info-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.pic {
+  width: 55%; 
+  align-items: center;
+  justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.text {
+  width: 45%;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 3%;
+  text-align: left;
+  font-size: calc(0.6vw + 0.6vh);
+  color: white;
+}
+
+#gaiyang-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#gaiyang-info img:hover {
+  content: url(images/realsnack/kaiyang2_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#euro-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#euro-info img:hover {
+  content: url(images/realsnack/eurocustardcake_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#puthai-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#puthai-info img:hover {
+  content: url(images/realsnack/puthai_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#jollystick-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#jollystick-info img:hover {
+  content: url(images/realsnack/jollystick1_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#luckycoco-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#luckycoco-info img:hover {
+  content: url(images/realsnack/coco_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#banana-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#banana-info img:hover {
+  content: url(images/realsnack/banana_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#tenjang-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#tenjang-info img:hover {
+  content: url(images/realsnack/tenjang_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#ringpop-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#ringpop-info img:hover {
+  content: url(images/realsnack/ringpop_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#yimyim-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#yimyim-info img:hover {
+  content: url(images/realsnack/yimyim_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#kidkid-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#kidkid-info img:hover {
+  content: url(images/realsnack/kidkid1_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#sanghai-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#sanghai-info img:hover {
+  content: url(images/realsnack/sanghai_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+
+#fftomato-info img {
+  max-width: 55%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#fftomato-info img:hover {
+  content: url(images/realsnack/ff2_realsnack.png);
+  max-width: 55%;
+  max-height: 100%;
+}
+/************** End Card Info ************/
+
+/************** Footer Button **************/
+#myBtn {
+  position: fixed;
+  bottom: 30px;
+  float: right;
+  right: 55%;
+  left: 45%;
+  max-width: 120px;
+  width: 100%;
+  border-color: black;
+  background-color: white;
+  padding: .5px;
+  border-radius: 4px;
+  font-family: SourceCodePro;
+  font-size: 15px;
+  opacity: 70%;
+  margin-bottom: 16px;
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+  color: white;
+  background-color: gray;
+}
+
+#shuffleButton {
+  width: 15%;
+  border-color: white;
+  background-color:#222222;
+  padding: .5px;
+  border-radius: 4px;
+  font-family: SourceCodePro;
+  font-size: 10px;
+  color: white;
+  margin-left: 80%;
+}
+
+/************** End Footer Button **************/
+
+/************** Media Query **************/
+
+@media screen and (max-width:800px) {
+  /* style changes when the screen gets smaller */
+  h1 {
+    font-size: calc(1.5vw + 1.5vh);
+    padding: 1%;
+  }
+
+  .card {
+    width: 180px;
+    height: 260px;
+    font-size: 95%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding: 15px;
+  }
+
+  .cardpic {
+    width: 112.6px;
+    height: 128.4px;
+  }
+
+  .info-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  /* And even smaller */
+  h1 {
+    font-size: calc(1.2vw + 1.2vh);
+    padding: 1%;
+  }
+
+.card {
+    width: 120px;
+    height: 160px;
+    font-size: 75%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+  .cardpic {
+    width: 82.6px;
+    height: 98.4px;
+  }
+
+  .info-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pic {
+    width: 50%; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  #myBtn {
+    right: 50%;
+    left: 40%;
+    max-width: 100px;
+    width: 100%;
+    font-size: 12px;
+    padding: .5px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width:799px) and (min-width:479px) {
+  /* And the rest */
+  h1 {
+    font-size: calc(1.3vw + 1.3vh);
+    padding: 1%
+  }
+
+.card {
+    width: 150px;
+    height: 200px;
+    font-size: 85%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+    border: 0.8px solid black;
+}
+
+  .cardpic {
+    width: 118.6px;
+    height: 134.4px;
+  }
+
+  .info-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  #myBtn {
+    right: 50%;
+    left: 40%;
+    max-width: 100px;
+    width: 100%;
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .pic {
+    width: 50%; 
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+  }
+
+  #shuffleButton {
+    width: 18%;
+    border-color: white;
+    background-color:#222222;
+    padding: .5px;
+    border-radius: 4px;
+    font-family: SourceCodePro;
+    font-size: 12px;
+    color: white;
+    margin-left: 75%;
+  }
+}
+
+@media screen and (max-width:1224px) and (min-width:799px) {
+  /* Big screens */
+  h1 {
+    font-size: calc(1.5vw + 1.5vh);
+    padding: 1%
+  }
+
+  .card {
+    width: 230px;
+    height: 320px;
+    font-size: 140%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding: 30px;
+  }
+
+  .cardpic {
+    width: 169.2px;
+    height: 200.8px;
+  }
+
+  .info-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  #myBtn {
+    right: 60%;
+    left: 40%;
+    max-width: 200px;
+    width: 100%;
+    padding: .5px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  #shuffleButton {
+    width: 20%;
+    border-color: white;
+    background-color:#222222;
+    padding: .5px;
+    border-radius: 4px;
+    font-family: SourceCodePro;
+    font-size: 15px;
+    color: white;
+    margin-left: 75%;
+  }
+
+}
+
+@media screen and (max-width:1824px) and (min-width:1225px) {
+  /* Large screens */
+  h1 {
+    font-size: calc(1.6vw + 1.6vh);
+    padding: 1%
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    font-size: 160%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+    padding: 30px;
+    border: 1.2px solid black;
+  }
+
+  .cardpic {
+    width: 229.2px;
+    height: 270.8px;
+  }
+
+  .info-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  #myBtn {
+    right: 60%;
+    left: 40%;
+    max-width: 240px;
+    width: 100%;
+    padding: .5px;
+    border-radius: 16px;
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  #shuffleButton {
+    width: 15%;
+    border-color: white;
+  background-color:#222222;
+    padding: .5px;
+    border-radius: 4px;
+    font-family: SourceCodePro;
+    font-size: 20px;
+    color: white;
+    margin-left: 80%;
+  }
+
+}
